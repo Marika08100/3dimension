@@ -11,6 +11,8 @@ return [
 'title' => 'Üdvözöllek 3Dimensions-nél!',
 'subTitle' => ' Tapasztalt csapatunk garantálja a gyors, precíz és megfizethető munkát. Az innováció és minőség jegyében dolgozunk, hogy elképzeléseid valóra váljanak.',
 'offer' => 'Kérj ajánlatot!',
+'copy' => 'Powered by',
+
 
 
 

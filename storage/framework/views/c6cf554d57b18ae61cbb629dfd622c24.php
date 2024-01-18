@@ -56,40 +56,40 @@
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" data-scroll-nav="0">{{__('messages.home')}}</a>
+                                <a class="nav-link active" href="#" data-scroll-nav="0"><?php echo e(__('messages.home')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="1">{{__('messages.features')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="1"><?php echo e(__('messages.features')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2">{{__('messages.about')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.about')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="4">{{__('messages.faq')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="4"><?php echo e(__('messages.faq')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="5">{{__('messages.reviews')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="5"><?php echo e(__('messages.reviews')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="6">{{__('messages.contact')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="6"><?php echo e(__('messages.contact')); ?></a>
                             </li>
                         </ul>
-                        <form action="{{ route('language.switch') }}" method="POST" class="inline-block">
-                            @csrf
+                        <form action="<?php echo e(route('language.switch')); ?>" method="POST" class="inline-block">
+                            <?php echo csrf_field(); ?>
                             <select name="language" onchange="this.form.submit()"
                                 class="p-2 rounded bg-gray-100 text-gray-800">
-                                <option value="en" {{ app()->getLocale() === 'en' ? 'selected' : '' }}>English</option>
-                                <option value="hu" {{ app()->getLocale() === 'hu' ? 'selected' : '' }}>Magyar</option>
-                                <option value="ro" {{ app()->getLocale() === 'ro' ? 'selected' : '' }}>Romana</option>
+                                <option value="en" <?php echo e(app()->getLocale() === 'en' ? 'selected' : ''); ?>>English</option>
+                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>>Magyar</option>
+                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>>Romana</option>
                             </select>
                         </form>
-                        @if(session('language_switched'))
-                            <span class="language"> {{session ('language_switched') === 'hu' ? '' }}
+                        <?php if(session('language_switched')): ?>
+                            <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Hungarian' : ''); ?></span>
                             </span>
-                            @endif
+                            <?php endif; ?>
                     </div>
                 </div>
             </nav>
@@ -104,9 +104,9 @@
                 <div class="col-md-6">
                     <div class="caption d-table">
                         <div class="d-table-cell align-middle">
-                            <h1>{{__('messages.title')}}</h1>
-                            <p>{{__('messages.subTitle')}}.</p>
-                            <a href="#product-area">{{__('messages.offer')}}</a>
+                            <h1><?php echo e(__('messages.title')); ?></h1>
+                            <p><?php echo e(__('messages.subTitle')); ?>.</p>
+                            <a href="#product-area"><?php echo e(__('messages.offer')); ?></a>
                         </div>
                     </div>
                 </div>
@@ -812,7 +812,7 @@
                 </div>
                 <div class="col-lg-6 col-md-7">
                     <div class="copyright-text text-right">
-                        <p>&copy; {{ __('messages.copy') }} <a href="https://github.com/Marika08100">Marika</a></p>
+                        <p>&copy; <?php echo e(__('messages.copy')); ?> <a href="https://github.com/Marika08100">Marika</a></p>
                     </div>
                 </div>
             </div>
@@ -840,3 +840,4 @@
 </body>
 
 </html>
+<?php /**PATH C:\laragon\www\3dimension\3dimension\resources\views/home.blade.php ENDPATH**/ ?>
