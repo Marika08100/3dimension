@@ -5,7 +5,6 @@
         "dev": "vite",
         "build": "vite build",
         "watch": "vite build --watch"
-
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
@@ -16,5 +15,8 @@
         "sass": "^1.56.1",
         "vite": "^5.0.0",
         "vue": "^3.2.37"
+    },
+    "dependencies": {
+        "i18n": "^0.15.1"
     }
 }
