@@ -143,17 +143,15 @@
                 <!--start about info-->
                 <div class="col-md-6">
                     <div class="about-info">
-                        <h2>About The Product</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, neque ipsam repudiandae
-                            nam ratione voluptates!</p>
+                        <h2>{{__('messages.service')}}</h2>
+                        <p>{{__('messages.serviceBio')}}</p>
                         <ul>
-                            <li><i class="icofont-check"></i> Model No #240 Blackmart</li>
-                            <li><i class="icofont-check"></i> Camera Resulation 24 Mega Pixel</li>
-                            <li><i class="icofont-check"></i> Image Processor DIGIC 7</li>
-                            <li><i class="icofont-check"></i> Effective Pixels Approx. 24.20 megapixels</li>
-                            <li><i class="icofont-check"></i> Aspect Ratio 3:2</li>
-                            <li><i class="icofont-check"></i> Lens Mount EF/EF-S</li>
-                            <li><i class="icofont-check"></i> Focal Length Equivalent to 1.6x</li>
+                            <h3><li><i class="icofont-check"></i> {{__('messages.serviceOne')}}</li></h3>
+                            <p>{{__('messages.serviceOneBio')}}</p>
+                            <h3><li><i class="icofont-check"></i> {{__('messages.serviceTwo')}}</li></h3>
+                            <p>{{__('messages.serviceTwoBio')}}</p>
+                            <h3><li><i class="icofont-check"></i> {{__('messages.serviceThree')}}</li></h3>
+                            <p>{{__('messages.serviceThreeBio')}}</p>
                         </ul>
                     </div>
                 </div>
@@ -169,12 +167,8 @@
                 <!--start video content-->
                 <div class="col-md-6">
                     <div class="video-cont">
-                        <h2>Best Product For You. Check The Demo Video.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                            eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-                            posuere a, pede.</p>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
+                        <h2>{{__('messages.printablesHeader')}}</h2>
+                        <p>{{__('messages.printablesBio')}}</p>
                     </div>
                 </div>
                 <!--end video content-->
@@ -183,8 +177,7 @@
                     <div class="video-box">
                         <div class="d-table text-center">
                             <div class="d-table-cell align-middle">
-                                <a class="popup-video mfp-iframe" href="https://www.youtube.com/watch?v=om4qTKMuPPs"><i
-                                        class="icofont-ui-play"></i></a>
+                                <a class="icofont-location-arrow" href="https://www.printables.com"><i class="icofont-location-arrow"></i></a>
                             </div>
                         </div>
                     </div>

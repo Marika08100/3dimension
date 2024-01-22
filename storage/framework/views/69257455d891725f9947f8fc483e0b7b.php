@@ -61,9 +61,8 @@
                                 <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>>Romana</option>
                             </select>
                         </form>
-                      <form action="{{route('language.switch')}}" method="POST" class="inline-block"
-                      <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
+                        <?php if(session('language_switched')): ?>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>

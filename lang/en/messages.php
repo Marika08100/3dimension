@@ -21,20 +21,7 @@ return [
     'knownCheap' => 'Cost-Effectiveness in Small Quantities',
     'knownCheapDes' => '3D printing enables cost-effective small-scale production without incurring excessive costs. This can be particularly advantageous for unique design products, prototypes, or small-batch manufacturing.',
     'tech' => 'Technological Advantages',
-    'techDes' => 'Here are some fundamental advantages of 3D printing.',
-    'goBack' => 'Go home',
-    'name' => 'Name*',
-    'email' => 'Email*',
-    'phone' => 'Phone number',
-    'message' => 'Message*',
-    'nameErr' => 'The name is required',
-    'emailErr' => 'We need a valid email',
-    'messageErr' => 'Please, leave us a message!',
-    'subject' => 'Subject*',
-    'thankYouMessage' => 'Thank you for your message!',
-
-
-
+    'techDes' => 'Here are some fundamental advantages of 3D printing.'
 
 
 ];

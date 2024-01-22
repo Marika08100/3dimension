@@ -22,24 +22,5 @@ return [
 'knownCheapDes' => 'A 3D nyomtatás lehetővé teszi a kis példányszámú gyártást is, anélkül, hogy túlzott költségekbe ütköznél. Ez különösen előnyös lehet például egyedi dizájnú termékek, prototípusok vagy kis sorozatú gyártás esetén.',
 'tech' => 'Technológiai előnyök',
 'techDes' => 'Íme néhány alapvető előnye a 3D nyomtatásnak.',
-'goBack' => 'Vissza a főoldalra',
-'name' => 'Név*',
-'email' => 'E-mail*',
-'phone' => 'Telefonszám',
-'message' => 'Üzenet*',
-'nameErr' => 'A név kötelező.',
-'emailErr' => 'Egy valid e-mail cim kötelező.',
-'messageErr' => 'Kérjük, töltse ki ezt a mezőt!',
-'subject' => 'Tárgy*',
-'thankYouMessage' => 'Köszönjük az üzenetet!',
-
-
-
-
-
-
-
-
-
 
 ];
