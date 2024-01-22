@@ -22,5 +22,15 @@ return [
 'knownCheapDes' => 'A 3D nyomtatás lehetővé teszi a kis példányszámú gyártást is, anélkül, hogy túlzott költségekbe ütköznél. Ez különösen előnyös lehet például egyedi dizájnú termékek, prototípusok vagy kis sorozatú gyártás esetén.',
 'tech' => 'Technológiai előnyök',
 'techDes' => 'Íme néhány alapvető előnye a 3D nyomtatásnak.',
+'service' => 'Services We Offer',
+'serviceBio' => 'Felkészült és tapasztalt csapatunk a legmodernebb 3D-nyomtatási szolgáltatásokat kínálja, garantálva a testreszabhatóságot, gyors prototípuskészítést, valamint széles anyagválasztékot a projektjeid optimális megvalósításához',
+'serviceOne' => 'Termék Konzultáció',
+'serviceTwo' => '3D Modellek Személyre Szabása és Tervezése',
+'serviceThree' => '3D Nyomtatás',
+'serviceOneBio' => 'Szakértői csapatunk segítségével személyre szabott termék konzultáció során megbeszéljük az egyedi igényeidet és segítünk kialakítani a tökéletes terméktervet.',
+'serviceTwoBio' => 'Professzionális tervezőink egyedülálló 3D modelleket készítenek, melyeket teljes mértékben testre szabhatunk az igényeid szerint, garantálva a kiváló minőséget és egyedi dizájnt.',
+'serviceThreeBio' => 'Modern technológiával és különféle anyagokkal rendelkezve vállaljuk 3D nyomtatását tervezett modelleidnek, biztosítva a pontos és magas minőségű kivitelezést az elképzeléseid valóra váltásához',
+'printablesBio' => 'A Printables.com egy online platform, ahol számos ingyenesen letölthető és testreszabható nyomtatható tartalom található. Az oldal széles skáláját kínálja a kreatív és hasznos termekeknek. Az itt elérhető kategóriák magukban foglalják az oktatást, szórakozást, ünnepeket, design és sok mást.',
+'printablesHeader' => 'Amennyiben nem találtad még meg a számodra legjobb 3D modellt, íme itt egy hasznos link:',
 
 ];
