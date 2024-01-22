@@ -21,7 +21,21 @@ return [
     'knownCheap' => 'Eficiență Economică în Cantități Mici',
     'knownCheapDes' => 'Imprimarea 3D permite producția economică în cantități mici, fără a genera costuri excesive. Acest lucru poate fi în mod deosebit avantajos pentru produsele de design unic, prototipuri sau producția în serii mici.',
     'tech' => 'Avantaje Tehnologice',
-    'techDes' => 'Iată câteva avantaje fundamentale ale imprimării 3D.'
+    'techDes' => 'Iată câteva avantaje fundamentale ale imprimării 3D.',
+    'goBack' => 'Pagina principala',
+    'name' => 'Nume',
+    'email' => 'Email*',
+    'phone' => 'Nr.de telefon',
+    'message' => 'Mesaj*',
+    'nameErr' => 'Numele este necesar',
+    'emailErr' => 'Email este neceser',
+    'messageErr' => 'vă rugăm să completați acest câmp',
+    'subject' => 'Subiect*',
+    'thankYouMessage' => 'Multumim pentru mesaj!',
+
+
+
+
 
 
 ];

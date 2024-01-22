@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -25,3 +26,6 @@ Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])
 
 
 Route::post('/language-switch',[LanguageController::class,'languageSwitch'])->name('language.switch');
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+

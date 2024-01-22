@@ -20,4 +20,28 @@ class ContactController extends Controller
     {
         return view('contact');
     }
+
+    public function submit(Request $request)
+{
+    // Handle form submission, including file upload
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        // Add validation rules for other fields
+        'attachment' => 'file|mimes:stl,obj,3mf,image/jpeg,image/png,image/pdf,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document|max:50',
+        // Adjust max file size as needed
+    ]);
+
+    // Handle file upload
+    if ($request->hasFile('attachment')) {
+        $file = $request->file('attachment');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('uploads'), $fileName);
+        // You can save the file path in the database or perform other actions here
+    }
+
+
+    return redirect()->back()->with('success', 'Form submitted successfully!');
+}
+
 }

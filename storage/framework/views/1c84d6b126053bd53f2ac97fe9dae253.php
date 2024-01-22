@@ -33,24 +33,41 @@
             <!--start contact form-->
             <div class="col-md-7">
                 <div class="contact-form">
-                    <form id="ajax-contact" action="contact.php" method="post">
+                    <form id="ajax-contact" action="<?php echo e(route('contact.submit')); ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
-                                required="required" data-error="name is required.">
+                            <input type="text" class="form-control" id="name" name="name" placeholder=<?php echo e(__('messages.name')); ?>
+
+                                required="required" data-error="Name is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
-                                required="required" data-error="valid email is required.">
+                            <input type="email" class="form-control" id="email" name="email" placeholder=<?php echo e(__('messages.email')); ?>
+
+                                required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder=<?php echo e(__('messages.phone')); ?>>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder=<?php echo e(__('messages.subject')); ?>
+
+                                required="required" data-error="Subject is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" id="message" name="message" rows="10"
-                                placeholder="Write Your Message*" required="required"
+                                placeholder=<?php echo e(__('messages.message')); ?> required="required"
                                 data-error="Please, leave us a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <button type="submit">Submit</button>
+                        <div class="form-group">
+                            <input type="file" class="form-control" id="attachment" name="attachment" accept=".stl, .obj, .3mf, image/*, .pdf, .doc, .docx">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit"><?php echo e(__('actions.submit')); ?></button>
+                        <button type="submit"><?php echo e(__('messages.goBack')); ?></button>
                         <div class="messages"></div>
                     </form>
                 </div>
@@ -66,6 +83,12 @@
         </div>
     </div>
 </section>
+
+<script>
+    <?php if(session('success')): ?>
+        alert("<?php echo e(__('messages.thankYouMessage')); ?>");
+    <?php endif; ?>
+</script>
   <!--jQuery js-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <!--proper js-->
