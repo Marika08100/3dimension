@@ -26,8 +26,8 @@
     <!--responsive css-->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
+     <?php echo $__env->make('header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
-
 <body>
     <!--Start Preloader-->
     <div class="preloader">
@@ -41,61 +41,7 @@
         </div>
     </div>
     <!--End Preloader-->
-    <!--start header-->
-    <header id="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- Logo -->
-                    <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
-                    </button>
-                    <!-- navbar links -->
-                    <div class="collapse navbar-collapse" id="navbarContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" data-scroll-nav="0"><?php echo e(__('messages.home')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="1"><?php echo e(__('messages.features')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.about')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="4"><?php echo e(__('messages.faq')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="5"><?php echo e(__('messages.reviews')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="6"><?php echo e(__('messages.contact')); ?></a>
-                            </li>
-                        </ul>
-                        <form action="<?php echo e(route('language.switch')); ?>" method="POST" class="inline-block">
-                            <?php echo csrf_field(); ?>
-                            <select name="language" onchange="this.form.submit()"
-                                class="p-2 rounded bg-gray-100 text-gray-800">
-                                <option value="en" <?php echo e(app()->getLocale() === 'en' ? 'selected' : ''); ?>>English</option>
-                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>>Magyar</option>
-                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>>Romana</option>
-                            </select>
-                        </form>
-                        <?php if(session('language_switched')): ?>
-                            <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Hungarian' : ''); ?></span>
-                            </span>
-                            <?php endif; ?>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--end header-->
+
     <!--start home area-->
     <section id="home-area" data-scroll-index="0">
         <div class="container">
@@ -129,9 +75,8 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <div class="section-heading text-center">
-                        <h2>Product Features</h2>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
+                        <h2><?php echo e(__('messages.tech')); ?></h2>
+                        <p><?php echo e(__('messages.techDes')); ?></p>
                     </div>
                 </div>
             </div>
@@ -140,10 +85,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-single text-center">
                         <div class="icon">
-                            <i class="icon-cloud1"></i>
+                            <i class="icofont-unique-idea"></i>
                         </div>
-                        <h4>High Quality</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
+                <h4><?php echo e(__('messages.knownQuality')); ?></h4>
+                        <p><?php echo e(__('messages.knownQualityDes')); ?></p>
                     </div>
                 </div>
                 <!--end feature single-->
@@ -151,10 +96,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-single text-center">
                         <div class="icon">
-                            <i class="icon-coding"></i>
+                            <i class="icofont-speed-meter"></i>
                         </div>
-                        <h4>Awesome Design</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
+                        <h4><?php echo e(__('messages.knownProt')); ?></h4>
+                        <p><?php echo e(__('messages.knownProtDes')); ?></p>
                     </div>
                 </div>
                 <!--end feature single-->
@@ -162,10 +107,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-single text-center">
                         <div class="icon">
-                            <i class="icon-box"></i>
-                        </div>
-                        <h4>Latest Technology</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
+                            <i class="icofont-bucket"></i>
+                            </div>
+                        <h4><?php echo e(__('messages.knownTech')); ?></h4>
+                        <p><?php echo e(__('messages.knownTechDes')); ?></p>
                     </div>
                 </div>
                 <!--end feature single-->
@@ -173,10 +118,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-single text-center">
                         <div class="icon">
-                            <i class="icon-avatar"></i>
+                            <i class="icofont-money-bag"></i>
                         </div>
-                        <h4>User Friendly</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
+                        <h4><?php echo e(__('messages.knownCheap')); ?></h4>
+                        <p><?php echo e(__('messages.knownCheapDes')); ?></p>
                     </div>
                 </div>
                 <!--end feature single-->
@@ -249,75 +194,7 @@
         </div>
     </section>
     <!--end video area-->
-    <!--start why choose area-->
-    <section id="why-chose-area" class="bg-gray">
-        <div class="circle-bg"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                    <div class="section-heading text-center">
-                        <h2>Why Choose The Product</h2>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--start product gallery-->
-                <div class="col-lg-5 col-md-6">
-                    <div class="product-gallery owl-carousel">
-                        <img src="images/watch-14.png" class="img-fluid" alt>
-                        <img src="images/watch-15.png" class="img-fluid" alt>
-                        <img src="images/watch-12.png" class="img-fluid" alt>
-                    </div>
-                </div>
-                <!--end product gallery-->
-                <!--start why choose content-->
-                <div class="col-lg-7 col-md-6">
-                    <div class="why-chose-cont row">
-                        <!--start feature single-->
-                        <div class="col-lg-6">
-                            <div class="why-chose-single">
-                                <i class="icon-cloud1"></i>
-                                <h4>High Quality</h4>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
-                            </div>
-                        </div>
-                        <!--end feature single-->
-                        <!--start feature single-->
-                        <div class="col-lg-6">
-                            <div class="why-chose-single">
-                                <i class="icon-coding"></i>
-                                <h4>Awesome Design</h4>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
-                            </div>
-                        </div>
-                        <!--end feature single-->
-                        <!--start feature single-->
-                        <div class="col-lg-6">
-                            <div class="why-chose-single">
-                                <i class="icon-box"></i>
-                                <h4>Latest Technology</h4>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
-                            </div>
-                        </div>
-                        <!--end feature single-->
-                        <!--start feature single-->
-                        <div class="col-lg-6">
-                            <div class="why-chose-single">
-                                <i class="icon-avatar"></i>
-                                <h4>User Friendly</h4>
-                                <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet</p>
-                            </div>
-                        </div>
-                        <!--end feature single-->
-                    </div>
-                </div>
-                <!--end why choose content-->
-            </div>
-        </div>
-    </section>
-    <!--end why choose area-->
+
     <!--start product area-->
     <section id="product-area" data-scroll-index="3">
         <div class="container">
@@ -418,35 +295,7 @@
         </div>
     </section>
     <!--end product area-->
-    <!--start newsletter area-->
-    <section id="newsletter-area" class="bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                    <div class="section-heading text-center">
-                        <h2 class="text-white">Subscribe Our Newsletter</h2>
-                        <p class="text-white">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
-                            sit amet orci. Aenean dignissim pellentesque felis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--start newsletter box-->
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <div class="newsletter-box">
-                        <div class="newsletter-form text-center">
-                            <form action="#" method="post">
-                                <input type="email" class="form-control" placeholder="Enter Your Email">
-                                <button type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!--end newsletter box-->
-            </div>
-        </div>
-    </section>
-    <!--end newsletter area-->
+
     <!--start faq area-->
     <section id="faq-area" data-scroll-index="4">
         <div class="container">
@@ -745,56 +594,6 @@
     </section>
     <!--end testimonial area-->
     <!--start contact area-->
-    <section id="contact-area" data-scroll-index="6">
-        <div class="container">
-            <div class="row">
-                <!--start section heading-->
-                <div class="col-lg-6 col-md-8">
-                    <div class="section-heading">
-                        <h2>Contact With Us</h2>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
-                    </div>
-                </div>
-                <!--end section heading-->
-            </div>
-            <div class="row">
-                <!--start contact form-->
-                <div class="col-md-7">
-                    <div class="contact-form">
-                        <form id="ajax-contact" action="contact.php" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
-                                    required="required" data-error="name is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
-                                    required="required" data-error="valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" name="message" rows="10"
-                                    placeholder="Write Your Message*" required="required"
-                                    data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <button type="submit">Submit</button>
-                            <div class="messages"></div>
-                        </form>
-                    </div>
-                </div>
-                <!--end contact form-->
-                <!--start contact image-->
-                <div class="col-md-5">
-                    <div class="contact-img text-center">
-                        <img src="images/tiertime_up300_image5.jpg" class="img-fluid animation-jump" alt>
-                    </div>
-                </div>
-                <!--end contact image-->
-            </div>
-        </div>
-    </section>
     <!--end contact area-->
     <!--start footer-->
     <footer id="footer" class="bg-gray">
