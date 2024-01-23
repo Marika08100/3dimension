@@ -67,7 +67,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                         <button type="submit"><?php echo e(__('actions.submit')); ?></button>
-                        <button type="submit"><?php echo e(__('messages.goBack')); ?></button>
+                        <button type="submit" id="goBackButton"><?php echo e(__('messages.goBack')); ?></button>
                         <div class="messages"></div>
                     </form>
                 </div>
@@ -89,6 +89,13 @@
         alert("<?php echo e(__('messages.thankYouMessage')); ?>");
     <?php endif; ?>
 </script>
+<script>
+    var goBackButton = document.getElementById('goBackButton');
+
+    goBackButton.addEventListener('click', function() {
+      window.location.href = '/';
+    });
+  </script>
   <!--jQuery js-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <!--proper js-->

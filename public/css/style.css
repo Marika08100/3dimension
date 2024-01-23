@@ -526,9 +526,9 @@ p {
 
 .about-info ul li {
     display: block;
-    padding: 8px 0;
+    padding: 10px 0;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 25px
 }
 

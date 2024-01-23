@@ -21,7 +21,27 @@ return [
     'knownCheap' => 'Eficiență Economică în Cantități Mici',
     'knownCheapDes' => 'Imprimarea 3D permite producția economică în cantități mici, fără a genera costuri excesive. Acest lucru poate fi în mod deosebit avantajos pentru produsele de design unic, prototipuri sau producția în serii mici.',
     'tech' => 'Avantaje Tehnologice',
-    'techDes' => 'Iată câteva avantaje fundamentale ale imprimării 3D.'
+    'techDes' => 'Iată câteva avantaje fundamentale ale imprimării 3D.',
+    'service' => 'Serviciile Noastre',
+    'serviceBio' => 'Echipa noastră pregătită și experimentată oferă servicii de imprimare 3D de ultimă generație, garantând personalizarea, prototipizarea rapidă și o gamă largă de materiale pentru realizarea optimă a proiectelor tale.',
+    'serviceOne' => 'Consultanță Produs',
+    'serviceTwo' => 'Personalizare și Design de Modele 3D',
+    'serviceThree' => 'Imprimare 3D',
+    'serviceOneBio' => 'Cu ajutorul echipei noastre de experți, discutăm cerințele tale unice în timpul consultărilor personalizate pentru produse și te ajutăm să creezi designul perfect al produsului.',
+    'serviceTwoBio' => 'Designerii noștri profesioniști creează modele 3D unice care pot fi complet personalizate în funcție de specificațiile tale, garantând o calitate excelentă și un design distinctiv.',
+    'serviceThreeBio' => 'Echipa noastră, echipată cu tehnologie modernă și o varietate de materiale, se ocupă de imprimarea 3D a modelelor proiectate de tine, asigurând o execuție precisă și de înaltă calitate pentru a da viață ideilor tale.',
+    'printablesBio' => 'Printables.com este o platformă online ce oferă o gamă variată de conținut imprimabil descărcabil și personalizabil gratuit. Site-ul acoperă categorii precum educație, divertisment, sărbători, design și multe altele, oferind produse creative și utile.',
+    'printablesHeader' => 'Dacă nu ai găsit încă modelul 3D perfect pentru tine, iată un link util:',
+    'goBack' => 'Pagina principala',
+    'name' => 'Nume',
+    'email' => 'Email*',
+    'phone' => 'Telefon',
+    'message' => 'Mesaj*',
+    'nameErr' => 'Numele este necesar',
+    'emailErr' => 'Email este neceser',
+    'messageErr' => 'vă rugăm să completați acest câmp',
+    'subject' => 'Subiect*',
+    'thankYouMessage' => 'Multumim pentru mesaj!',
 
 
 ];
