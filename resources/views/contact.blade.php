@@ -34,6 +34,7 @@
             <div class="col-md-7">
                 <div class="contact-form">
                     <form id="ajax-contact" action="{{ route('contact.submit') }}" method="post" enctype="multipart/form-data">
+                        @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder={{__('messages.name')}}
                                 required="required" data-error="Name is required.">

@@ -177,7 +177,7 @@
                     <div class="video-box">
                         <div class="d-table text-center">
                             <div class="d-table-cell align-middle">
-                                <a class="icofont-location-arrow" href="https://www.printables.com"><i class="icofont-location-arrow"></i></a>
+                                <a class="icofont-location-arrow" href="https://www.printables.com" target="_blank"><i class="icofont-location-arrow"></i></a>
                             </div>
                         </div>
                     </div>

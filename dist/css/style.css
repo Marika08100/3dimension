@@ -320,7 +320,7 @@ p {
 }
 
 .caption-img img {
-    max-width: 350px;
+    max-width: 500px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -526,9 +526,9 @@ p {
 
 .about-info ul li {
     display: block;
-    padding: 8px 0;
+    padding: 10px 0;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 25px
 }
 
@@ -538,17 +538,18 @@ p {
 
 .about-img {
     position: relative;
-    -webkit-transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
+    transform: translateY(-50%);
     background-image: url(../images/circle.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center
 }
 
+
 .about-img img {
-    max-width: 350px;
+    max-width: 550px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -1109,7 +1110,7 @@ p {
 }
 
 .contact-img img {
-    max-width: 700px !important;
+    max-width: 700px;
 }
 
 .help-block.with-errors li {

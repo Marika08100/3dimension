@@ -34,6 +34,7 @@
             <div class="col-md-7">
                 <div class="contact-form">
                     <form id="ajax-contact" action="<?php echo e(route('contact.submit')); ?>" method="post" enctype="multipart/form-data">
+                        <?php echo csrf_field(); ?>
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder=<?php echo e(__('messages.name')); ?>
 

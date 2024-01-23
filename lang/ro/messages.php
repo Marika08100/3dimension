@@ -30,7 +30,7 @@ return [
     'serviceOneBio' => 'Cu ajutorul echipei noastre de experți, discutăm cerințele tale unice în timpul consultărilor personalizate pentru produse și te ajutăm să creezi designul perfect al produsului.',
     'serviceTwoBio' => 'Designerii noștri profesioniști creează modele 3D unice care pot fi complet personalizate în funcție de specificațiile tale, garantând o calitate excelentă și un design distinctiv.',
     'serviceThreeBio' => 'Echipa noastră, echipată cu tehnologie modernă și o varietate de materiale, se ocupă de imprimarea 3D a modelelor proiectate de tine, asigurând o execuție precisă și de înaltă calitate pentru a da viață ideilor tale.',
-    'printablesBio' => 'Printables.com este o platformă online ce oferă o gamă variată de conținut imprimabil descărcabil și personalizabil gratuit. Site-ul acoperă categorii precum educație, divertisment, sărbători, design și multe altele, oferind produse creative și utile.',
+    'printablesBio' => 'Printables este o platformă online ce oferă o gamă variată de conținut imprimabil descărcabil și personalizabil gratuit. Site-ul acoperă categorii precum educație, divertisment, sărbători, design și multe altele, oferind produse creative și utile.',
     'printablesHeader' => 'Dacă nu ai găsit încă modelul 3D perfect pentru tine, iată un link util:',
     'goBack' => 'Pagina principala',
     'name' => 'Nume',

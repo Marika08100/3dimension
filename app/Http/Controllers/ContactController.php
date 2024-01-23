@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormSubmission;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -39,6 +41,7 @@ class ContactController extends Controller
         $file->move(public_path('uploads'), $fileName);
         // You can save the file path in the database or perform other actions here
     }
+    // Mail::to('ambrusmarika02@gmail.com')->send(new ContactFormSubmission($request->all()));
 
 
     return redirect()->back()->with('success', 'Form submitted successfully!');

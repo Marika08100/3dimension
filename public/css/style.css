@@ -538,17 +538,18 @@ p {
 
 .about-img {
     position: relative;
-    -webkit-transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
+    transform: translateY(-50%);
     background-image: url(../images/circle.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center
 }
 
+
 .about-img img {
-    max-width: 350px;
+    max-width: 550px;
 }
 
 /*-------------------------------------------------------------------------------------
