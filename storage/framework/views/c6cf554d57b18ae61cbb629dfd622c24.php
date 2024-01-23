@@ -194,9 +194,8 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <div class="section-heading text-center">
-                        <h2>Our Awesome Products</h2>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
+                        <h2><?php echo e(__('messages.showcaseTitle')); ?></h2>
+                        <p><?php echo e(__('messages.showcaseBio')); ?></p>
                     </div>
                 </div>
             </div>
@@ -205,18 +204,13 @@
                 <div class="col-md-6">
                     <div class="product-single row">
                         <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-3.png" class="img-fluid" alt="Image">
+                            <img src="images/kep1.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
                             <h4>Luxurious Watch</h4>
                             <ul>
-                                <li><i class="icofont-check"></i> Crown Protector</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> Movement Button</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li>
+                                
                             </ul>
-                            <h3>$120 <del><sup>$250</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -225,18 +219,13 @@
                 <div class="col-md-6">
                     <div class="product-single row">
                         <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-2.png" class="img-fluid" alt="Image">
+                            <img src="images/kep2.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
                             <h4>Pink Torex Watch</h4>
                             <ul>
-                                <li><i class="icofont-check"></i> Stainless Steel</li>
-                                <li><i class="icofont-check"></i> High Quality Glass</li>
-                                <li><i class="icofont-check"></i> 3 Step Protection</li>
-                                <li><i class="icofont-check"></i> 2 Year Guarantee</li>
+                                
                             </ul>
-                            <h3>$250 <del><sup>$390</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -245,18 +234,13 @@
                 <div class="col-md-6">
                     <div class="product-single row">
                         <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-1.png" class="img-fluid" alt="Image">
+                            <img src="images/kep3.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
                             <h4>New Yellow Watch</h4>
                             <ul>
-                                <li><i class="icofont-check"></i> 2 Step Protection Glass</li>
-                                <li><i class="icofont-check"></i> PVD Coating</li>
-                                <li><i class="icofont-check"></i> Clear Super Glass</li>
-                                <li><i class="icofont-check"></i> 3 Year Guarantee</li>
+                                
                             </ul>
-                            <h3>$330 <del><sup>$550</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -265,25 +249,20 @@
                 <div class="col-md-6">
                     <div class="product-single row">
                         <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-4.png" class="img-fluid" alt="Image">
+                            <img src="images/kep4.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
                             <h4>Brand New Black</h4>
                             <ul>
-                                <li><i class="icofont-check"></i> Lifetime Battery</li>
-                                <li><i class="icofont-check"></i> Awesome Color</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li>
+                                
                             </ul>
-                            <h3>$180 <del><sup>$390</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
                         </div>
                     </div>
                 </div>
                 <!--end product single-->
             </div>
             <div class="more-prod-btn text-center">
-                <a href>More Product</a>
+                <a id="contactButton" href="/contact"><?php echo e(__('messages.contact')); ?></a>
             </div>
         </div>
     </section>
@@ -604,7 +583,7 @@
                 </div>
                 <div class="col-lg-6 col-md-7">
                     <div class="copyright-text text-right">
-                        <p>&copy; <?php echo e(__('messages.copy')); ?> <a href="https://github.com/Marika08100">Marika</a></p>
+                        <p>&copy; <?php echo e(__('messages.copy')); ?> <a href="https://github.com/Marika08100" target="blank">Marika</a></p>
                     </div>
                 </div>
             </div>
@@ -612,6 +591,13 @@
     </footer>
     <!--end footer-->
     <!--jQuery js-->
+    <script>
+        var contactButton = document.getElementById('contactButton');
+
+        contactButton.addEventListener('click', function() {
+          window.location.href = '/contact';
+        });
+      </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <!--proper js-->
     <script src="js/popper.min.js"></script>

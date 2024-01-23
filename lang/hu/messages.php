@@ -8,7 +8,7 @@ return [
 'faq' => 'GYAK',
 'reviews' => 'Ajánlások',
 'contact' => 'Kapcsolatfelvétel',
-'title' => 'Üdvözöllek 3Dimensions-nél!',
+'title' => 'Üdvözöllek a 3Dimensions-nél!',
 'subTitle' => ' Tapasztalt csapatunk garantálja a gyors, precíz és megfizethető munkát. Az innováció és minőség jegyében dolgozunk, hogy elképzeléseid valóra váljanak.',
 'offer' => 'Kérj ajánlatot!',
 'copy' => 'Powered by',
@@ -42,6 +42,9 @@ return [
 'messageErr' => 'Kérjük, töltse ki ezt a mezőt!',
 'subject' => 'Tárgy*',
 'thankYouMessage' => 'Köszönjük az üzenetet!',
+'showcaseTitle' => 'Tekintse meg legújabb projekteinket',
+'showcaseBio' => 'Fedezze fel az innovációt minden rétegben. Ismerje meg legfrissebb 3D-nyomtatási projekteinket, ahol a precizitás, kreativitás és a legmodernebb technológia találkozik a 3Dimensions-nél. Valósítsa meg ötleteit velünk.',
+
 
 
 ];

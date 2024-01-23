@@ -10,7 +10,7 @@ return [
     'contact' => 'Contact',
     'title' => 'Bun venit la 3Dimensions!',
     'subTitle' => 'Echipa noastră cu experiență garantează o muncă rapidă, precisă și accesibilă. Lucrăm în spiritul inovației și al calității pentru ca ideile tale să devină realitate.',
-    'offer' => 'Cerere oferta',
+    'offer' => 'Cere oferta',
     'copy' => 'Powered by',
     'knownQuality' => 'Personalizare și Unicitate',
     'knownQualityDes' => 'Imprimarea 3D permite crearea de design-uri unice și personalizate. Fie că trimiți propriile tale proiecte sau comanzi diferite modele online, imprimarea 3D permite crearea de obiecte personalizate și unice.',
@@ -42,6 +42,9 @@ return [
     'messageErr' => 'vă rugăm să completați acest câmp',
     'subject' => 'Subiect*',
     'thankYouMessage' => 'Multumim pentru mesaj!',
+    'showcaseTitle' => 'Vezi cele mai recente proiecte ale noastre',
+    'showcaseBio' => 'Descoperă inovația în fiecare strat. Explorează cele mai recente proiecte de imprimare 3D, care pun în valoare precizia, creativitatea și tehnologia de vârf la 3Dimensions. Ridică-ți ideile cu noi.',
+
 
 
 ];

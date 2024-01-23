@@ -29,3 +29,6 @@ Route::post('/language-switch',[LanguageController::class,'languageSwitch'])->na
 
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
+
+
+

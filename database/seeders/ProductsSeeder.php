@@ -28,7 +28,7 @@ class ProductsSeeder extends Seeder
                     "name" => "Pink",
                     "slug" => "Luxury Wolf",
                     "description" => '<ul><li><i class="icofont-check"></i> Stainless Steel</li><li><i class="icofont-check"></i> High Quality Glass</li><li><i class="icofont-check"></i> 3 Step Protection</li><li><i class="icofont-check"></i> 2 Year Guarantee</li></ul>',
-                    "image_name" => "watch-1.png",
+                    "image_name" => "kep1.jpeg",
                     "price" => 250.00,
 
                 ]);
@@ -38,7 +38,7 @@ class ProductsSeeder extends Seeder
                         "name" => "Wolf",
                         "slug" => "Luxury Wolf",
                         "description" => '<ul><li><i class="icofont-check"></i> Stainless Steel</li><li><i class="icofont-check"></i> High Quality Glass</li><li><i class="icofont-check"></i> 3 Step Protection</li><li><i class="icofont-check"></i> 2 Year Guarantee</li></ul>',
-                        "image_name" => "watch-2.png",
+                        "image_name" => "kep2.png",
                         "price" => 250.00,
 
                     ]);
