@@ -1,4 +1,5 @@
 <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
 <!--bootstrap css-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <!--owl carousel css-->
@@ -33,33 +34,37 @@
             <!--start contact form-->
             <div class="col-md-7">
                 <div class="contact-form">
-                    @if(Session::has('msg'))
-                    <p class="alert alert-success">{{Session::get('msg')  }}
-                        @endif
+                    <?php if(Session::has('msg')): ?>
+                    <p class="alert alert-success"><?php echo e(Session::get('msg')); ?>
+
+                        <?php endif; ?>
                     <form id="ajax-contact" action="/post-message" method="post" enctype="multipart/form-data">
-                        @csrf
+                        <?php echo csrf_field(); ?>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder={{__('messages.name')}}
+                            <input type="text" class="form-control" id="name" name="name" placeholder=<?php echo e(__('messages.name')); ?>
+
                                 required="required" data-error="Name is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder={{__('messages.email')}}
+                            <input type="email" class="form-control" id="email" name="email" placeholder=<?php echo e(__('messages.email')); ?>
+
                                 required="required" data-error="Valid email is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="phone" class="form-control" id="phone" name="phone" placeholder={{__('messages.phone')}}>
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder=<?php echo e(__('messages.phone')); ?>>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder={{__('messages.subject')}}
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder=<?php echo e(__('messages.subject')); ?>
+
                                 required="required" data-error="Subject is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" id="message" name="message" rows="10"
-                                placeholder={{__('messages.message')}} required="required"
+                                placeholder=<?php echo e(__('messages.message')); ?> required="required"
                                 data-error="Please, leave us a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -67,8 +72,8 @@
                             <input type="file" class="form-control" id="attachment" name="attachment" accept=".stl, .obj, .3mf, image/*, .pdf, .doc, .docx">
                             <div class="help-block with-errors"></div>
                         </div>
-                        <button type="submit">{{__('actions.submit')}}</button>
-                        <button type="submit" id="goBackButton">{{__('messages.goBack')}}</button>
+                        <button type="submit"><?php echo e(__('actions.submit')); ?></button>
+                        <button type="submit" id="goBackButton"><?php echo e(__('messages.goBack')); ?></button>
                         <div class="messages"></div>
                     </form>
                 </div>
@@ -110,3 +115,4 @@
   <!--main js-->
   <script src="js/custom.js"></script>
 
+<?php /**PATH C:\laragon\www\3dimension\3dimension\resources\views/contact.blade.php ENDPATH**/ ?>
