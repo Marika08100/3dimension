@@ -22,29 +22,26 @@ class ContactController extends Controller
     {
         return view('contact');
     }
+    public function post_message(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'attachment' => 'file|mimes:stl,obj,3mf,image/jpeg,image/png,image/pdf,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document|max:50',
+        ]);
+        $data = [
+            'name' => $request->name,
+            'phone' => $request ->phone,
+            'email' => $request ->email,
+            'subject' =>$request ->subject,
+            'message' =>$request->message,
+            'attachment' =>$request ->attachment,
+        ];
+        //send email to admin
+        Mail::to('ambrusmarika02@mail.com')->send(new ContactFormSubmission($data));
 
-    public function submit(Request $request)
-{
-    // Handle form submission, including file upload
-    $request->validate([
-        'name' => 'required',
-        'email' => 'required|email',
-        // Add validation rules for other fields
-        'attachment' => 'file|mimes:stl,obj,3mf,image/jpeg,image/png,image/pdf,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document|max:50',
-        // Adjust max file size as needed
-    ]);
-
-    // Handle file upload
-    if ($request->hasFile('attachment')) {
-        $file = $request->file('attachment');
-        $fileName = time() . '_' . $file->getClientOriginalName();
-        $file->move(public_path('uploads'), $fileName);
-        // You can save the file path in the database or perform other actions here
+      return back()->with('msg','Thanks');
     }
-    // Mail::to('ambrusmarika02@gmail.com')->send(new ContactFormSubmission($request->all()));
 
-
-    return redirect()->back()->with('success', 'Form submitted successfully!');
-}
 
 }

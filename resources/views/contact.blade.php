@@ -33,7 +33,10 @@
             <!--start contact form-->
             <div class="col-md-7">
                 <div class="contact-form">
-                    <form id="ajax-contact" action="{{ route('contact.submit') }}" method="post" enctype="multipart/form-data">
+                    @if(Session::has('msg'))
+                    <p class="alert alert-success">{{Session::get('msg')  }}
+                        @endif
+                    <form id="ajax-contact" action="/post-message" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder={{__('messages.name')}}
@@ -81,12 +84,6 @@
         </div>
     </div>
 </section>
-
-<script>
-    @if(session('success'))
-        alert("{{ __('messages.thankYouMessage') }}");
-    @endif
-</script>
 <script>
     var goBackButton = document.getElementById('goBackButton');
 

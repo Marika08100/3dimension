@@ -32,16 +32,6 @@ class ContactFormSubmission extends Mailable
     }
 
     /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
      * Get the attachments for the message.
      *
      * @return array<int, \Illuminate\Mail\Mailables\Attachment>
@@ -52,6 +42,9 @@ class ContactFormSubmission extends Mailable
     }
     public function build()
     {
-        return $this->view('email.contact-submission');
-    }
+        return $this->view('mails.contact_mail',
+    [
+        'data' => $this->data
+    ])->subject('New Contact Enquiry');
+   }
 }
