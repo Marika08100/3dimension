@@ -26,7 +26,7 @@
     <!--responsive css-->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-     @include('header')
+     <?php echo $__env->make('header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
 <!--start faq area-->
  <section id="faq-area" data-scroll-index="4">
@@ -249,3 +249,4 @@
     <!--main js-->
     <script src="js/custom.js"></script>
 <!--end faq area-->
+<?php /**PATH C:\laragon\www\3dimension\3dimension\resources\views/materials.blade.php ENDPATH**/ ?>

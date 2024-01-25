@@ -40,7 +40,8 @@
                                 <a class="nav-link" href="#" data-scroll-nav="2">{{__('messages.services')}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a>
+                                <div id="section3">
+                                <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a></div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/materials">{{__('messages.materials')}}</a>
