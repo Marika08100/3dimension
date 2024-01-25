@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/materials">{{__('messages.faq')}}</a>
+                                <a class="nav-link" href="/materials">{{__('messages.materials')}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact" >{{__('messages.contact')}}</a>
@@ -53,9 +53,9 @@
                             @csrf
                             <select name="language" onchange="this.form.submit()"
                                 class="p-2 rounded bg-gray-100 text-gray-800">
-                                <option value="en" {{ app()->getLocale() === 'en' ? 'selected' : '' }}>English</option>
-                                <option value="hu" {{ app()->getLocale() === 'hu' ? 'selected' : '' }}>Magyar</option>
-                                <option value="ro" {{ app()->getLocale() === 'ro' ? 'selected' : '' }}>Romana</option>
+                                <option value="en" {{ app()->getLocale() === 'en' ? 'selected' : '' }}>{{__('messages.languageEn')}}</option>
+                                <option value="hu" {{ app()->getLocale() === 'hu' ? 'selected' : '' }}>{{__('messages.languageRo')}}</option>
+                                <option value="ro" {{ app()->getLocale() === 'ro' ? 'selected' : '' }}>{{__('messages.languageHu')}}</option>
                             </select>
                         </form>
                         @if(session('language_switched'))

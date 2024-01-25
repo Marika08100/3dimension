@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'languageEn' => 'Engleză',
+    'languageRo' => 'Română',
+    'languageHu' => 'Maghiară',
     'home' => 'Acasă',
     'features' => 'Avantaje',
     'services' => 'Servicii',
