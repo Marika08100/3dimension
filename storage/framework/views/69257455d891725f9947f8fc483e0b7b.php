@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="1"><?php echo e(__('messages.features')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.about')); ?></a>
+                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.services')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <div id="section3">
@@ -45,9 +45,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/materials"><?php echo e(__('messages.faq')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="5"><?php echo e(__('messages.reviews')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact" ><?php echo e(__('messages.contact')); ?></a>

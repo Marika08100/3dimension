@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="1">{{__('messages.features')}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2">{{__('messages.about')}}</a>
+                                <a class="nav-link" href="#" data-scroll-nav="2">{{__('messages.services')}}</a>
                             </li>
                             <li class="nav-item">
                                 <div id="section3">
@@ -45,9 +45,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/materials">{{__('messages.faq')}}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="5">{{__('messages.reviews')}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact" >{{__('messages.contact')}}</a>
