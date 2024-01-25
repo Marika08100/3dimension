@@ -40,7 +40,8 @@
                                 <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.about')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a>
+                                <div id="section3">
+                                <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a></div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/materials"><?php echo e(__('messages.faq')); ?></a>

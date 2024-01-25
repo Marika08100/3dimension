@@ -198,6 +198,38 @@
         <!--end faq accordian-->
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Ellenőrizze, hogy az aktuális oldal URL-je tartalmazza-e a "materials" stringet
+        if (window.location.href.includes("/materials")) {
+            // Ha igen, változtassa meg a "product" linket
+            var productLink = document.querySelector('a[data-scroll-nav="3"]');
+            if (productLink) {
+                productLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    // A "home" oldal URL-jét és a harmadik szakasz azonosítóját állítsd be
+                    var homeUrl = '/home'; // Állítsd be a "home" oldal URL-jét
+                    var sectionId = 'section3'; // Állítsd be a harmadik szakasz azonosítóját
+
+                    // Ellenőrizze, hogy az aktuális oldal már a "home" oldalon van-e
+                    if (window.location.href.includes(homeUrl)) {
+                        // Ha igen, görgess a megadott szakaszhoz
+                        var targetElement = document.getElementById(sectionId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        // Ha nem, átirányítás a "home" oldalra a megadott szakasszal
+                        var fullUrl = homeUrl + '#' + sectionId;
+                        window.location.href = fullUrl;
+                    }
+                });
+            }
+        }
+    });
+</script>
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
     <!--proper js-->
