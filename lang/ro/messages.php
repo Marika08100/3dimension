@@ -2,11 +2,10 @@
 
 return [
     'home' => 'Acasă',
-    'features' => 'Serviciile noastre',
-    'about' => 'Despre noi',
+    'features' => 'Avantaje',
+    'services' => 'Servicii',
     'product' => 'Produse',
-    'faq' => 'FAQ',
-    'reviews' => 'Recomandări',
+    'materials' => 'Materiale',
     'contact' => 'Contact',
     'title' => 'Bun venit la 3Dimensions!',
     'subTitle' => 'Echipa noastră cu experiență garantează o muncă rapidă, precisă și accesibilă. Lucrăm în spiritul inovației și al calității pentru ca ideile tale să devină realitate.',

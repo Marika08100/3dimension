@@ -37,16 +37,13 @@
                                 <a class="nav-link" href="#" data-scroll-nav="1"><?php echo e(__('messages.features')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.about')); ?></a>
+                                <a class="nav-link" href="#" data-scroll-nav="2"><?php echo e(__('messages.services')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="4"><?php echo e(__('messages.faq')); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="5"><?php echo e(__('messages.reviews')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact" ><?php echo e(__('messages.contact')); ?></a>
@@ -62,7 +59,7 @@
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>
