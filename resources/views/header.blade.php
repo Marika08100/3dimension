@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" data-scroll-nav="0">{{__('messages.home')}}</a>
+                                <a class="nav-link active" href="/" >{{__('messages.home')}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="1">{{__('messages.features')}}</a>
@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="4">{{__('messages.faq')}}</a>
+                                <a class="nav-link" href="/materials">{{__('messages.faq')}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="5">{{__('messages.reviews')}}</a>

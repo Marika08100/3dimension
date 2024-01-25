@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" data-scroll-nav="0"><?php echo e(__('messages.home')); ?></a>
+                                <a class="nav-link active" href="/" ><?php echo e(__('messages.home')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="1"><?php echo e(__('messages.features')); ?></a>
@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="4"><?php echo e(__('messages.faq')); ?></a>
+                                <a class="nav-link" href="/materials"><?php echo e(__('messages.faq')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="5"><?php echo e(__('messages.reviews')); ?></a>
@@ -62,7 +62,7 @@
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>
