@@ -209,7 +209,7 @@
                     event.preventDefault();
 
                     // A "home" oldal URL-jét és a harmadik szakasz azonosítóját állítsd be
-                    var homeUrl = '/home'; // Állítsd be a "home" oldal URL-jét
+                    var homeUrl = '/'; // Állítsd be a "home" oldal URL-jét
                     var sectionId = 'section3'; // Állítsd be a harmadik szakasz azonosítóját
 
                     // Ellenőrizze, hogy az aktuális oldal már a "home" oldalon van-e
