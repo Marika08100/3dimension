@@ -62,7 +62,7 @@
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>
