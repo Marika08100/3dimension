@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/materials"><?php echo e(__('messages.faq')); ?></a>
+                                <a class="nav-link" href="/materials"><?php echo e(__('messages.materials')); ?></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact" ><?php echo e(__('messages.contact')); ?></a>
@@ -54,13 +54,13 @@
                             <?php echo csrf_field(); ?>
                             <select name="language" onchange="this.form.submit()"
                                 class="p-2 rounded bg-gray-100 text-gray-800">
-                                <option value="en" <?php echo e(app()->getLocale() === 'en' ? 'selected' : ''); ?>>English</option>
-                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>>Magyar</option>
-                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>>Romana</option>
+                                <option value="en" <?php echo e(app()->getLocale() === 'en' ? 'selected' : ''); ?>><?php echo e(__('messages.languageEn')); ?></option>
+                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>><?php echo e(__('messages.languageHu')); ?></option>
+                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>><?php echo e(__('messages.languageRo')); ?></option>
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>

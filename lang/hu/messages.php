@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'languageEn' => 'Angol',
+    'languageRo' => 'Román',
+    'languageHu' => 'Magyar',
     'home' => 'Otthon',
     'features' => 'Előnyök',
     'services' => 'Szolgáltatásaink',

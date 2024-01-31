@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'languageEn' => 'English',
+    'languageRo' => 'Romanian',
+    'languageHu' => 'Hungarian',
     'home' => 'Home',
     'features' => 'Features',
     'services' => 'Services',
