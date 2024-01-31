@@ -43,6 +43,8 @@ return [
     'thankYouMessage' => 'Multumim pentru mesaj!',
     'showcaseTitle' => 'Vezi cele mai recente proiecte ale noastre',
     'showcaseBio' => 'Descoperă inovația în fiecare strat. Explorează cele mai recente proiecte de imprimare 3D, care pun în valoare precizia, creativitatea și tehnologia de vârf la 3Dimensions. Ridică-ți ideile cu noi.',
+    'follow' => 'Follow us:',
+
 
 
 

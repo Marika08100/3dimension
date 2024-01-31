@@ -38,7 +38,7 @@ class ContactController extends Controller
             'attachment' =>$request ->attachment,
         ];
         //send email to admin
-        Mail::to('ambrusmarika02@mail.com')->send(new ContactFormSubmission($data));
+        Mail::to('ambrusmarika02@gmail.com')->send(new ContactFormSubmission($data));
 
       return back()->with('msg','Thanks');
     }

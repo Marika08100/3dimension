@@ -43,6 +43,7 @@ return [
     'thankYouMessage' => 'Thank you for your message!',
     'showcaseTitle' => 'Take a look at our latest projects',
     'showcaseBio' => 'Discover innovation in every layer. Explore our latest 3D printing projects showcasing precision, creativity, and cutting-edge technology at 3Dimensions. Elevate your ideas with us.',
+    'follow' => 'Follow us:',
 
 
 

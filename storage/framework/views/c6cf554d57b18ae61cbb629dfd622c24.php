@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <div class="section-heading text-center">
-                        <h2><?php echo e(__('messages.tech')); ?></h2>
+                                                <h2><?php echo e(__('messages.tech')); ?></h2>
                         <p><?php echo e(__('messages.techDes')); ?></p>
                     </div>
                 </div>
@@ -262,7 +262,7 @@
                 <!--end product single-->
             </div>
             <div class="more-prod-btn text-center">
-                <a id="contactButton" href="/contact"><?php echo e(__('messages.contact')); ?></a>
+                <a id="contactButton" href="/contact" target="_blank"><?php echo e(__('messages.contact')); ?></a>
             </div>
         </div>
     </section>
@@ -278,10 +278,9 @@
                 <div class="col-lg-6 col-md-5">
                     <div class="footer-social">
                         <ul>
-                            <li><span>Follow Us:</span></li>
-                            <li><a href><i class="icofont-facebook"></i></a></li>
-                            <li><a href><i class="icofont-twitter"></i></a></li>
-                            <li><a href><i class="icofont-google-plus"></i></a></li>
+                            <li><span><?php echo e(__('messages.follow')); ?></span></li>
+                            <li><a href="https://www.instagram.com/3dmnsns?igsh=YXZ2dGM3dzd3emR3" target="_blank"><i class="icofont-instagram"></i></a></li>
+                            
                         </ul>
                     </div>
                 </div>

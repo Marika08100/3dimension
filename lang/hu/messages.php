@@ -43,6 +43,8 @@ return [
     'thankYouMessage' => 'Köszönjük az üzenetet!',
     'showcaseTitle' => 'Tekintse meg legújabb projekteinket',
     'showcaseBio' => 'Fedezze fel az innovációt minden rétegben. Ismerje meg legfrissebb 3D-nyomtatási projekteinket, ahol a precizitás, kreativitás és a legmodernebb technológia találkozik a 3Dimensions-nél. Valósítsa meg ötleteit velünk.',
+    'follow' => 'Kövess minket:',
+
 
 
 
