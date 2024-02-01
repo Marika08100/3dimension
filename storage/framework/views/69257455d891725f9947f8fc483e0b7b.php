@@ -22,7 +22,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <!-- Logo -->
-                    <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <a class="logo" href="#"><img src="images/3Dimensions-logos_black.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                         aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
