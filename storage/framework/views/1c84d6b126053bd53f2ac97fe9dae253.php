@@ -16,7 +16,7 @@
 <!--responsive css-->
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-  <section id="contact-area" data-scroll-index="6">
+  <div id="contact-area" >
     <div class="container">
         <div class="row">
             <!--start section heading-->
@@ -87,7 +87,7 @@
             <!--end contact image-->
         </div>
     </div>
-</section>
+</div>
 <script>
     var goBackButton = document.getElementById('goBackButton');
 

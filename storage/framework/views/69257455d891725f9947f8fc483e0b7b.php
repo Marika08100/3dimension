@@ -55,12 +55,12 @@
                             <select name="language" onchange="this.form.submit()"
                                 class="p-2 rounded bg-gray-100 text-gray-800">
                                 <option value="en" <?php echo e(app()->getLocale() === 'en' ? 'selected' : ''); ?>><?php echo e(__('messages.languageEn')); ?></option>
-                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>><?php echo e(__('messages.languageHu')); ?></option>
-                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>><?php echo e(__('messages.languageRo')); ?></option>
+                                <option value="hu" <?php echo e(app()->getLocale() === 'hu' ? 'selected' : ''); ?>><?php echo e(__('messages.languageRo')); ?></option>
+                                <option value="ro" <?php echo e(app()->getLocale() === 'ro' ? 'selected' : ''); ?>><?php echo e(__('messages.languageHu')); ?></option>
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? '' : ''); ?></span>
+                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>
