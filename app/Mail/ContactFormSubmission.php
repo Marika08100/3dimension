@@ -40,7 +40,7 @@ class ContactFormSubmission extends Mailable
     public function attachments(): array
     {
         return [
-            Attachment::fromPath($this->data['attachment'])
+            // Attachment::fromPath($this->data['attachment'])
 
         ];
     }
