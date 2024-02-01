@@ -806,8 +806,8 @@ p {
 }
 
 .product-single img {
-    max-width: 150px;
-    margin: 0 auto 30px;
+    max-width: 250px !important;
+    margin: 0 auto 20px;
 }
 
 .product-single h3 {
@@ -825,8 +825,8 @@ p {
 }
 
 .product-single li {
-    font-size: 14px;
-    padding: 4px 0;
+    font-size: 16px;
+    padding: 6px 0;
 }
 
 .product-cont li i {

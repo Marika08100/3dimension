@@ -207,12 +207,12 @@
                             <img src="images/kep1.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
-                            <h4>Luxurious Watch</h4>
+                            <h4>Polylactic acid (PLA)</h4>
                             <ul>
-                                {{-- <li><i class="icofont-check"></i> Crown Protector</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> Movement Button</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li> --}}
+                                <li><i class="icofont-check"></i> Környezetbarát</li>
+                                <li><i class="icofont-check"></i> Könnyen nyomtatható</li>
+                                <li><i class="icofont-check"></i> Széles színválaszték</li>
+                                <li><i class="icofont-check"></i> Alacsony zsugorodás</li>
                             </ul>
                         </div>
                     </div>
@@ -225,12 +225,12 @@
                             <img src="images/kep2.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
-                            <h4>Pink Torex Watch</h4>
+                            <h4>PET-G</h4>
                             <ul>
-                                {{-- <li><i class="icofont-check"></i> Stainless Steel</li>
-                                <li><i class="icofont-check"></i> High Quality Glass</li>
-                                <li><i class="icofont-check"></i> 3 Step Protection</li>
-                                <li><i class="icofont-check"></i> 2 Year Guarantee</li> --}}
+                                <li><i class="icofont-check"></i> Szilárdság és ütésállóság</li>
+                                <li><i class="icofont-check"></i> Keményített és könnyen nyomtatható</li>
+                                <li><i class="icofont-check"></i> Kiváló átláthatóság és fényáteresztés</li>
+                                <li><i class="icofont-check"></i> Kevésbé hajlamos a deformációra</li>
                             </ul>
                         </div>
                     </div>
@@ -243,12 +243,12 @@
                             <img src="images/kep3.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
-                            <h4>New Yellow Watch</h4>
+                            <h4>ABS</h4>
                             <ul>
-                                {{-- <li><i class="icofont-check"></i> 2 Step Protection Glass</li>
-                                <li><i class="icofont-check"></i> PVD Coating</li>
-                                <li><i class="icofont-check"></i> Clear Super Glass</li>
-                                <li><i class="icofont-check"></i> 3 Year Guarantee</li> --}}
+                                <li><i class="icofont-check"></i> Szilárdság és Tartósság</li>
+                                <li><i class="icofont-check"></i> Hőállóság</li>
+                                <li><i class="icofont-check"></i> Változatos Felhasználások</li>
+                                <li><i class="icofont-check"></i> Utókezelhetőség</li>
                             </ul>
                         </div>
                     </div>
@@ -261,12 +261,12 @@
                             <img src="images/kep4.jpeg" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
-                            <h4>Brand New Black</h4>
+                            <h4>ASA</h4>
                             <ul>
-                                {{-- <li><i class="icofont-check"></i> Lifetime Battery</li>
-                                <li><i class="icofont-check"></i> Awesome Color</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li> --}}
+                                <li><i class="icofont-check"></i> Időjárásállóság</li>
+                                <li><i class="icofont-check"></i> Magas hőállóság</li>
+                                <li><i class="icofont-check"></i> Kemikáliák ellenállása</li>
+                                <li><i class="icofont-check"></i> Könnyű kezelhetőség</li>
                             </ul>
                         </div>
                     </div>
