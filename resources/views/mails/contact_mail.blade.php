@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Mail</title>
+    <title> Contact Form - Admin - {{ $request['subject'] }}</title>
 </head>
 <body>
-    <p>Name:  {{ $data['name'] }}  </p>
-    <p>Email:    {{ $data['email'] }} </p>
-    <p>Phone:   {{ $data['phone'] }}  </p>
-    <p>Subject:    {{ $data['subject'] }} </p>
-    <p>message:   {{ $data['message'] }}  </p>
-    <p>attachment:   {{ $data['attachment'] }}  </p>
-
-
+    <p>Hello Admin</p>
+    <p>You have received an enquiry from the below detail </p>
+    <p>Name:  {{ $request['name'] }}  </p>
+    <p>Email:    {{ $request['email'] }} </p>
+    <p>Phone:   {{ $request['phone'] }}  </p>
+    <p>Subject:    {{ $request['subject'] }} </p>
+    <p>message:   {{ $request['message'] }}  </p>
 </body>
 </html>

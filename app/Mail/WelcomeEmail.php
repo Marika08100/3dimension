@@ -10,17 +10,20 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactFormSubmission extends Mailable
+class WelcomeEmail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $data;
+    public $request;
+    public $fileName;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($request,$fileName)
     {
-        $this->data = $data;    }
+        $this->request = $request;
+        $this->fileName = $fileName;
+       }
 
     /**
      * Get the message envelope.
@@ -28,7 +31,16 @@ class ContactFormSubmission extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Form Submission',
+            subject: 'Contact Form - Admin',
+        );
+    }
+     /**
+     * Get the message content defintion.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'mails.contact_mail',
         );
     }
 
@@ -39,16 +51,13 @@ class ContactFormSubmission extends Mailable
      */
     public function attachments(): array
     {
-        return [
-            // Attachment::fromPath($this->data['attachment'])
+       $attachments = [];
 
+       if($this->fileName){
+        $attachments = [
+            Attachment::fromPath(public_path('/attachment/'.$this->fileName))
         ];
     }
-    public function build()
-    {
-        return $this->view('mails.contact_mail',
-    [
-        'data' => $this->data
-    ])->subject('New Contact Enquiry');
-   }
+    return $attachments;
+    }
 }

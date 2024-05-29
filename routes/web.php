@@ -21,14 +21,15 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::get('/materials', [App\Http\Controllers\MaterialsController::class, 'index'])->name('materials');
 
 
 
 Route::post('/language-switch',[LanguageController::class,'languageSwitch'])->name('language.switch');
 
-Route::post('/post-message',[ContactController::class,'post_message']);
+Route::get('contact', [ContactController::class, 'index']);
+
+Route::post('contact',[ContactController::class,'sendContactMail'])->name('contact');
 
 
 

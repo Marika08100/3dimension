@@ -219,7 +219,7 @@ return [
         'state'                    => 'állapot',
         'street'                   => 'utca',
         'student'                  => 'diák',
-        'subject'                  => 'tantárgy',
+        'subject'                  => 'tárgy',
         'teacher'                  => 'tanár',
         'terms'                    => 'feltételeket',
         'test_description'         => 'teszt leírása',

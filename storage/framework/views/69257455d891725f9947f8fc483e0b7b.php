@@ -44,10 +44,10 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3"><?php echo e(__('messages.product')); ?></a></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/materials"><?php echo e(__('messages.materials')); ?></a>
+                                <a class="nav-link" href="/materials" target="_blank"><?php echo e(__('messages.materials')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact" ><?php echo e(__('messages.contact')); ?></a>
+                                <a class="nav-link" href="/contact" target="_blank"><?php echo e(__('messages.contact')); ?></a>
                             </li>
                         </ul>
                         <form action="<?php echo e(route('language.switch')); ?>" method="POST" class="inline-block">
@@ -60,8 +60,9 @@
                             </select>
                         </form>
                         <?php if(session('language_switched')): ?>
-                        <span class="language"><?php echo e(session('language_switched') === 'hu' ? 'Magyar' : ''); ?></span>
-                        <?php endif; ?>
+                            <span class="language"> <?php echo e(session ('language_switched') === 'hu' ? : '') ?>;
+                            </span>
+                            <?php endif; ?>
                     </div>
                 </div>
             </nav>

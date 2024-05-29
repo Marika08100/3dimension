@@ -44,10 +44,10 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3">{{__('messages.product')}}</a></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/materials">{{__('messages.materials')}}</a>
+                                <a class="nav-link" href="/materials" target="_blank">{{__('messages.materials')}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact" >{{__('messages.contact')}}</a>
+                                <a class="nav-link" href="/contact" target="_blank">{{__('messages.contact')}}</a>
                             </li>
                         </ul>
                         <form action="{{ route('language.switch') }}" method="POST" class="inline-block">

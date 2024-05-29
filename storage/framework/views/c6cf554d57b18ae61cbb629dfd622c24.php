@@ -52,7 +52,7 @@
                         <div class="d-table-cell align-middle">
                             <h1><?php echo e(__('messages.title')); ?></h1>
                             <p><?php echo e(__('messages.subTitle')); ?>.</p>
-                            <a href="#product-area"><?php echo e(__('messages.offer')); ?></a>
+                            <a href="/contact" target="_blank"><?php echo e(__('messages.offer')); ?></a>
                         </div>
                     </div>
                 </div>

@@ -52,7 +52,7 @@
                         <div class="d-table-cell align-middle">
                             <h1>{{__('messages.title')}}</h1>
                             <p>{{__('messages.subTitle')}}.</p>
-                            <a href="#product-area">{{__('messages.offer')}}</a>
+                            <a href="/contact" target="_blank">{{__('messages.offer')}}</a>
                         </div>
                     </div>
                 </div>

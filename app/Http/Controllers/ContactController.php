@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactFormSubmission;
+use App\Mail\WelcomeEmail;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -22,25 +25,37 @@ class ContactController extends Controller
     {
         return view('contact');
     }
-    public function post_message(Request $request)
+    public function sendContactMail(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
+        $this->validate($request,[
+            'name' => 'required|min:5,max:100',
             'email' => 'required|email',
-            'attachment' => 'file|mimes:stl,obj,3mf,image/jpeg,image/png,image/pdf,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document|max:50',
+            'phone' => 'required|min:7|max:20',
+            'subject' => 'required|min:5,max:100',
+            'message' => 'required|min:10|max:255',
+            'attachment' => 'required|mimes:stl,obj,3mf,pdf,doc,docx,xls,xlsx,csv|max:2048',
         ]);
-        $data = [
-            'name' => $request->name,
-            'phone' => $request ->phone,
-            'email' => $request ->email,
-            'subject' =>$request ->subject,
-            'message' =>$request->message,
-            'attachment' =>$request ->attachment,
-        ];
-        //send email to admin
-        Mail::to('ambrusmarika02@gmail.com')->send(new ContactFormSubmission($data));
 
-      return back()->with('msg','Thanks');
+        try{
+            if($request->hasFile('attachment')){
+                $fileName = time() . '.' . $request->file('attachment')->extension();
+                $request->file('attachment')->move('attachment',$fileName);
+
+
+                $adminMail = 'szekely.robert3@gmail.com';
+
+                $response = Mail::to($adminMail)->send(new WelcomeEmail($request->all(), $fileName));
+
+                if($response){
+                    return back()->with('success','Thank you for contacting us!');
+                }
+                return back()->with('error','Unable to submit contact form. Please try again.');
+            }
+
+        }
+        catch(Exception $e) {
+            dd('Unabel : ' . $e->getMessage());
+        }
     }
 
 
